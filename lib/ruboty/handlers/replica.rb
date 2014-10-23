@@ -4,7 +4,7 @@ module Ruboty
       env :HEROKU_API_KEY,  'heroku api key'
       env :HEROKU_APP_NAME, 'heroku app name'
 
-      on /replica(?: to(?<new_owner>.*@.*))?/, name: 'replica', description: 'replicate itself'
+      on /replica(?: to (?<new_owner>.*@.*))?/, name: 'replica', description: 'replicate itself'
 
       def replica(message)
         Ruboty::Replica::Actions::Replica.new(message).call
