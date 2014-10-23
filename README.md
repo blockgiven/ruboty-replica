@@ -2,6 +2,8 @@
 
 ruboty plugin for replicate itself.
 
+![screenshot](screenshot.png)
+
 ## Support
 heroku
 
@@ -27,7 +29,7 @@ Or install it yourself as:
 
 or
 
-    @ruboty
+    @ruboty replica to ruboty@example.com
 
 ## Contributing
 
