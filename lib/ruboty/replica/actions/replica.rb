@@ -8,8 +8,10 @@ module Ruboty
           message.reply("replica: #{replica['git_url']}")
 
           if message[:new_owner]
-            transfer!(replica, to: message[:new_owner])
+            transfer!(replica, message[:new_owner])
           end
+        rescue => e
+          message.reply("replica: failed, #{e.message}")
         end
 
         private
